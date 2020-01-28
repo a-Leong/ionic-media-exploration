@@ -1,5 +1,7 @@
 {
   "name": "VideoIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
