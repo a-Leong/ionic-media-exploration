@@ -1,13 +1,20 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Media Testing
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    <button (click)="takePicture()">Click me</button>
-    </div>
+    <ion-button (click)="takePicture()">Take Photo</ion-button>
+    <ion-button (click)="takeVideo()">Take Video</ion-button>
+  </div>
+  <div class="ion-padding" ng-app="myApp" ng-controller="myCtrl">
+    <video #video width="100%" controls hidden>
+      <source #videoSource type="video/mp4">
+    </video>
+    <img #image width="100%" hidden>
+  </div>
 </ion-content>
